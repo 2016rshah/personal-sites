@@ -1,5 +1,7 @@
 body{
-  background-color: #ecf0f1
+  /*background-color: #ecf0f1*/
+  background-image:url(hexellence.png);
+  overflow-y:hidden;
 }
 
 .panel h5{
