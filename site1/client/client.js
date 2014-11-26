@@ -23,11 +23,11 @@ if (Meteor.isClient) {
     //     }
     // });
     Template.hackathons.rendered = function () {
-        animate("#hacks", "flipInX")
+        animate("#hacks", "fadeInUp")
         //animate("#classes", "flipInX")
     };
     Template.classes.rendered = function () {
-        animate("#classes", "flipInX")
+        animate("#classes", "fadeInUp")
         //animate("#classes", "flipInX")
     };
     // Template.projects.events({
