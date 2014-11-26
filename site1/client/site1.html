@@ -1,5 +1,6 @@
 <head>
   <title>site1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King|Raleway:400' rel='stylesheet' type='text/css'>
 </head>
 
@@ -11,6 +12,9 @@
 <template name = "home">
 	<div class = "row">
 		{{> blockquote}}
+	</div>
+	<div class = "row">
+		{{> projects}}
 	</div>
 </template>
 <template name="hello">
@@ -28,26 +32,123 @@
 </template>
 
 <template name = "navigation">
+	<div class = "row">
+		<div class = "columns small-12 small-centered" style = "text-align:center">
+			<span class = "element"></span>
+		</div>
+	</div>
 	<ul class = "navList nav">
 	  <li class = "nav"><a href="/" class = "nav"><span class="fontawesome-home nav"></span></a></li>
 	  <li class = "nav"><a href="https://github.com/2016rshah"><span class="fontawesome-github nav"></span></a></li>
 	  <li class = "nav"><a href="references" class = "nav"><span class="fontawesome-heart nav"></span></a></li>
 	</ul>
 </template>
-<template name = "references">
-	<div class = "row" style = "text-align:center">
-		<h1>Thank you to</h1>
+<template name = "projects">
+	<div id = "hacks">
+		<div class = "row">
+			<div class = "columns small-5 small-centered" style = "text-align:center">
+				<h3>Hackathons</h3>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>YHack</h5>
+				  <p>36 hour long collegiate hackathon at Yale University where we made Pynt, a program which lets 
+users draw out shapes and snippets of code to create Python scripts. Drawings on the tablet site 
+symbolize object oriented programs that are sent via web-sockets in real-time to the desktop site 
+where they can be edited and run on the online interpreter. More info on <a href = "https://github.com/Pynt/Pynt">github</a>. Also try it out at <a href = "http://pynt.meteor.com/">pynt</a>.</p>
+				</div>
+			</div>
+			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>Hack the North</h5>
+				  <p>36 hour long collegiate hackathon at University of Waterloo in Toronto, Canada. We created 
+SpaceBowl, a virtual reality bowling game. Utilized the Oculus Rift Development Kit 2, Unity 3D, and 
+the Myo gesture controlled armband to model an accurate real-life virtual bowling experience. 
+Won the hackathon and also won the BackTrack API prize. More info on <a href = "http://challengepost.com/software/spacebowl-oculus-myo">Challenge Post</a>.</p>
+				</div>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>PilotDC</h5>
+				  <p>24 hour long hackathon based in DC to promote high school computer science awareness and 
+education. We created the 3Draw application which 
+modeled mobile gyroscopic movement in a 3D environment on a PC utilizing web sockets, 
+Meteor.js, Bootstrap.js, Three.js and a variety of other HTML5/JavaScript frameworks. More info on <a href = "https://github.com/mjkaufer/3draw">github</a>. Also try it out at <a href = "http://www.3-draw.org/">3-draw.org</a>.</p>
+				</div>
+			</div>
+			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>HackRU</h5>
+				  <p>24 hour long collegiate hackathon at Rutgers University where I made Mergify, a Spotify playlist 
+merging web app. It was built with the Spotify API, Node.js, HTML/JS, and Bootstrap.js. More info on <a href = "https://github.com/2016rshah/spotify/tree/master/replaceTracks">github</a>.</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class = "row">
-		<div class = "column small-10 small-centered">
-			<ul class = "referencesList" style = "text-align:center">
-				<li><a href = "http://jsfiddle.net/prevailingdesign/YcEW3/">This fiddle: </a>for the notebook paper blockquotes</li>
-				<li><a href = "http://codepen.io/rluque/pen/CgptI">This codepen: </a>for an awesome navigation bar</li>
-				<li><a href = "http://daneden.github.io/animate.css/">Animate.css: </a>for the div animations</li>
-				<li><a href = "https://atmospherejs.com/">Atmoshpere: </a>for all the meteor packages</li>
-				<li><a href = "http://foundation.zurb.com/docs/">Foundation: </a>for not being bootstrap</li>
-				<li><a href = "https://www.meteor.com/">Meteor: </a>for basically everything else</li>
-			</ul>
+	<div id = "classes">
+		<div class = "row">
+			<div class = "columns small-5 small-centered" style = "text-align:center">
+				<h3>Computer Science Classes</h3>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "columns small-11 medium-3 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>Foundations of Computer Science</h5>
+				  <p> 9th grade Java computer science course that introduces object-oriented programming, graphics and 
+animation, GUI interfaces, arrays and files, sorting, recursion, data representation, boolean logic, 
+and ethics. The course was lab-based with an emphasis on cooperative learning and developing 
+problem-solving skills.</p>
+				</div>
+			</div>
+			<div class = "columns small-11 medium-3 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>AP Computer Science A plus Data Structures</h5>
+				  <p>This course is a standard second-semester college course on algorithms and data structures in an 
+object-oriented environment taught in Java. The sorting algorithms include selection, insertion, 
+merge, quick, and heap; the data structures include arrays, linked lists, stacks, queues, trees, sets, 
+maps, and graphs. Additional topics include the Java Collections framework, Big-O analysis, 
+recursion, and class design.</p>
+				</div>
+			</div>
+			<div class = "columns small-11 medium-3 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>Artificial Intelligence 1</h5>
+				  <p>A semester-long post advanced placement level computer science course taught in Python covering topics ranging 
+from knowledge representation, production systems, matching, searching techniques, logical 
+reasoning, predicate calculus, and genetic algorithms.</p>
+				</div>
+			</div>
+			<div class = "columns small-11 medium-3 small-centered medium-uncentered">
+				<div class="panel">
+				  <h5>Mobile app Development</h5>
+				  <p>A semester-long course that I will take in spring-semester of the 2015 school year.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+<template name = "references">
+	<div id = "references">
+		<div class = "row" style = "text-align:center">
+			<h1>Thank you to</h1>
+		</div>
+		<div class = "row">
+			<div class = "column small-10 small-centered">
+				<ul class = "referencesList" style = "text-align:center">
+					<li><a href = "http://jsfiddle.net/prevailingdesign/YcEW3/">This fiddle: </a>for the notebook paper blockquotes</li>
+					<li><a href = "http://codepen.io/rluque/pen/CgptI">This codepen: </a>for an awesome navigation bar</li>
+					<li><a href = "https://github.com/mattboldt/typed.js">Typed.js: </a>for the typing animation</li>
+					<li><a href = "http://daneden.github.io/animate.css/">Animate.css: </a>for the div animations</li>
+					<li><a href = "https://atmospherejs.com/">Atmoshpere: </a>for all the meteor packages</li>
+					<li><a href = "http://foundation.zurb.com/docs/">Foundation: </a>for not being bootstrap</li>
+					<li><a href = "https://www.meteor.com/">Meteor: </a>for basically everything else</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </template>
