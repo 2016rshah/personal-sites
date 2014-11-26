@@ -31,3 +31,7 @@ body{
     width:300px;
     height:300px;
 } /*left is default*/
+
+.label{
+  margin-bottom:10px;
+}

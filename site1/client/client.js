@@ -27,7 +27,7 @@ if (Meteor.isClient) {
         //animate("#classes", "flipInX")
     };
     Template.classes.rendered = function () {
-        animate("#classes", "zoomIn")
+        animate("#classes", "flipInX")
         //animate("#classes", "flipInX")
     };
     // Template.projects.events({
