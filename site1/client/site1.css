@@ -20,15 +20,14 @@ body{
 .columns{
   padding:7px;
 }
-
-
-@keyframes typing { from { width: 0; } }
-@keyframes caret { 50% { border-color: transparent; } }
-
-code {
-  width: 13.2em; /* fallback, # of chars × 0.55 */
-  width: 13ch; /* # of characters */
-  border-right: .1em solid;
-  overflow: hidden;
-  animation: typing 12s steps(24, end), caret .5s step-end infinite alternate;
+.logo{
+  width:300px;
+  height:300px;
 }
+
+.right {
+    position: absolute;
+    right: 0px;
+    width:300px;
+    height:300px;
+} /*left is default*/

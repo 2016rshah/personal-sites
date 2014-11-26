@@ -22,9 +22,13 @@ if (Meteor.isClient) {
     //         animate("blockquote", "hinge")
     //     }
     // });
-    Template.projects.rendered = function () {
+    Template.hackathons.rendered = function () {
         animate("#hacks", "flipInX")
-        animate("#classes", "flipInX")
+        //animate("#classes", "flipInX")
+    };
+    Template.classes.rendered = function () {
+        animate("#classes", "zoomIn")
+        //animate("#classes", "flipInX")
     };
     // Template.projects.events({
     //     'click #hacks': function () {

@@ -9,14 +9,21 @@
 		{{> navigation}}
 	</div>
 </body>
+
+
 <template name = "home">
 	<div class = "row">
 		{{> blockquote}}
 	</div>
 	<div class = "row">
-		{{> projects}}
+		<a href = "/hackathons">Hackathons</a>
+	</div>
+	<div class = "row">
+		<a href = "/classes">Classes</a>
 	</div>
 </template>
+
+
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
@@ -39,11 +46,12 @@
 	</div>
 	<ul class = "navList nav">
 	  <li class = "nav"><a href="/" class = "nav"><span class="fontawesome-home nav"></span></a></li>
+	  <li class = "nav"><a href="/me" class = "nav"><span class = "fontawesome-user nav"></span></a></li>
 	  <li class = "nav"><a href="https://github.com/2016rshah"><span class="fontawesome-github nav"></span></a></li>
-	  <li class = "nav"><a href="references" class = "nav"><span class="fontawesome-heart nav"></span></a></li>
+	  <li class = "nav"><a href="/references" class = "nav"><span class="fontawesome-bullhorn nav"></span></a></li>
 	</ul>
 </template>
-<template name = "projects">
+<template name = "hackathons">
 	<div id = "hacks">
 		<div class = "row">
 			<div class = "columns small-5 small-centered" style = "text-align:center">
@@ -59,6 +67,14 @@ users draw out shapes and snippets of code to create Python scripts. Drawings on
 symbolize object oriented programs that are sent via web-sockets in real-time to the desktop site 
 where they can be edited and run on the online interpreter. More info on <a href = "https://github.com/Pynt/Pynt">github</a>. Also try it out at <a href = "http://pynt.meteor.com/">pynt</a>.</p>
 				</div>
+			</div>
+			<div class = "columns medium-6 medium-uncentered">
+				<img src = "yhack.png" alt = "yhack" height="300" width = "300">
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "columns medium-6 medium-uncentered">
+				<img src = "htn.png" alt = "htn" heigth = "300" width = "300" style="float:right;" >
 			</div>
 			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
 				<div class="panel">
@@ -80,6 +96,14 @@ modeled mobile gyroscopic movement in a 3D environment on a PC utilizing web soc
 Meteor.js, Bootstrap.js, Three.js and a variety of other HTML5/JavaScript frameworks. More info on <a href = "https://github.com/mjkaufer/3draw">github</a>. Also try it out at <a href = "http://www.3-draw.org/">3-draw.org</a>.</p>
 				</div>
 			</div>
+			<div class = "columns medium-6 medium-uncentered">
+				<img src="pilotDC.png" alt="pilot-dc" height="300" width = "300">
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "columns medium-6 medium-uncentered">
+				<img src = "hackru.png" alt = "hack-ru" height="300" width = "300" style="float:right;" >
+			</div>
 			<div class = "columns small-11 medium-6 small-centered medium-uncentered">
 				<div class="panel">
 				  <h5>HackRU</h5>
@@ -89,6 +113,8 @@ merging web app. It was built with the Spotify API, Node.js, HTML/JS, and Bootst
 			</div>
 		</div>
 	</div>
+</template>
+<template name = "classes">
 	<div id = "classes">
 		<div class = "row">
 			<div class = "columns small-5 small-centered" style = "text-align:center">
@@ -135,7 +161,7 @@ reasoning, predicate calculus, and genetic algorithms.</p>
 <template name = "references">
 	<div id = "references">
 		<div class = "row" style = "text-align:center">
-			<h1>Thank you to</h1>
+			<h1>Shout out to</h1>
 		</div>
 		<div class = "row">
 			<div class = "column small-10 small-centered">
@@ -150,5 +176,17 @@ reasoning, predicate calculus, and genetic algorithms.</p>
 				</ul>
 			</div>
 		</div>
+	</div>
+</template>
+<template name = "me">
+	<div class = "row">
+			<div class = "columns medium-4">
+				<!-- <div class = "panel" style = "width:637px; height:637px"> -->
+					<img src="prof.jpg" alt="profile-picture" style="width:318px;height:318px">
+				<!-- </div> -->
+			</div>
+			<div class = "columns medium-8">
+			<p>I am groot.</p>
+			</div>
 	</div>
 </template>
