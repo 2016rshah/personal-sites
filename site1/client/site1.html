@@ -1,0 +1,53 @@
+<head>
+  <title>site1</title>
+  <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King|Raleway:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class = "row">
+		{{> navigation}}
+	</div>
+</body>
+<template name = "home">
+	<div class = "row">
+		{{> blockquote}}
+	</div>
+</template>
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+<template name = "blockquote">
+	<blockquote>
+	    <p>I've <a href = "#">survived</a> a lot of things and I'll probably <a href = "#">survive</a> this</p>
+	    <cite>J.D Salinger</cite>
+	    <a class="source" href="#">source uncertain</a>
+	</blockquote>
+</template>
+
+<template name = "navigation">
+	<ul class = "navList nav">
+	  <li class = "nav"><a href="/" class = "nav"><span class="fontawesome-home nav"></span></a></li>
+	  <li class = "nav"><a href="https://github.com/2016rshah"><span class="fontawesome-github nav"></span></a></li>
+	  <li class = "nav"><a href="references" class = "nav"><span class="fontawesome-heart nav"></span></a></li>
+	</ul>
+</template>
+<template name = "references">
+	<div class = "row" style = "text-align:center">
+		<h1>Thank you to</h1>
+	</div>
+	<div class = "row">
+		<div class = "column small-10 small-centered">
+			<ul class = "referencesList" style = "text-align:center">
+				<li><a href = "http://jsfiddle.net/prevailingdesign/YcEW3/">This fiddle: </a>for the notebook paper blockquotes</li>
+				<li><a href = "http://codepen.io/rluque/pen/CgptI">This codepen: </a>for an awesome navigation bar</li>
+				<li><a href = "http://daneden.github.io/animate.css/">Animate.css: </a>for the div animations</li>
+				<li><a href = "https://atmospherejs.com/">Atmoshpere: </a>for all the meteor packages</li>
+				<li><a href = "http://foundation.zurb.com/docs/">Foundation: </a>for not being bootstrap</li>
+				<li><a href = "https://www.meteor.com/">Meteor: </a>for basically everything else</li>
+			</ul>
+		</div>
+	</div>
+</template>
