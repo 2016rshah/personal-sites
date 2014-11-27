@@ -37,3 +37,6 @@ body{
 .label{
   margin-bottom:10px;
 }
+.button{
+  background-color:rgba(50, 125, 174, 0.90);
+}
