@@ -57,7 +57,7 @@ blockquote a {
 }
 blockquote a.source {
     font: 10px/20px Courier, sans-serif;
-    color: #ccc;
+    /*color: #ccc;*/
     text-decoration: none;
 }
 blockquote a.source:before {

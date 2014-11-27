@@ -25,19 +25,21 @@
 		</div>
 	</div>
 </template>
-
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name = "intro">
+	<div id="myModal" class="reveal-modal xlarge" data-reveal>
+		<blockquote>
+		    <p>Hi I'm Rushi Shah</p>
+		    <cite>Rushi Shah</cite>
+		    <a class="source" href="#">Rushi Shah, everyday</a>
+		</blockquote>
+	  <a class="close-reveal-modal">&#215;</a>
+	</div>
 </template>
-
-
 <template name = "blockquote">
 	<blockquote>
-	    <p>I've <a href = "#">survived</a> a lot of things and I'll probably <a href = "#">survive</a> this</p>
-	    <cite>J.D Salinger</cite>
-	    <a class="source" href="#">source uncertain</a>
+	    <p>{{{quote}}}</p>
+	    <cite>Douglas Adams</cite>
+	    <a class="source" href="http://users.telenet.be/sterf/texts/fiction/adams/DirkGentlysHolisticDetectiveAgency.pdf">Dirk Gently's Holistic Detective Agency</a>
 	</blockquote>
 </template>
 
@@ -53,6 +55,9 @@
 	  <li class = "nav"><a href="/hackathons"><span class="fontawesome-folder-open nav"></span></a></li>
 	  <li class = "nav"><a href="/classes" class = "nav"><span class="fontawesome-pencil nav"></span></a></li>
 	</ul>
+	<div class = "row">
+		{{> intro}}
+	</div>
 </template>
 <template name = "hackathons">
 	<div id = "hacks">
