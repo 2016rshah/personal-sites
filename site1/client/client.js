@@ -30,6 +30,12 @@ if (Meteor.isClient) {
         animate("#classes", "fadeInUp")
         //animate("#classes", "flipInX")
     };
+    Template.me.rendered = function () {
+        animate("#me", "fadeInUp")
+    };
+    Template.home.rendered = function () {
+        animate("#buttons", "flipInX")
+    };
     // Template.projects.events({
     //     'click #hacks': function () {
     //         animate("#hacks", "flipInX")

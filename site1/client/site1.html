@@ -15,10 +15,13 @@
 	<div class = "row">
 		{{> blockquote}}
 	</div>
-	<div class = "row">
-		<div class = "columns small-12 small-centered" style = "text-align:center">
-			<a href = "/hackathons" class = "button">Hackathons</a>
-			<a href = "/classes" class = "button">Classes</a>
+	<div id = "buttons">
+		<div class = "row">
+			<div class = "columns small-12 small-centered" style = "text-align:center">
+				<a href = "/me" class = "button">About me</a>
+				<a href = "/hackathons" class = "button">Hackathons</a>
+				<a href = "/classes" class = "button">Classes</a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -47,8 +50,8 @@
 	<ul class = "navList nav">
 	  <li class = "nav"><a href="/" class = "nav"><span class="fontawesome-home nav"></span></a></li>
 	  <li class = "nav"><a href="/me" class = "nav"><span class = "fontawesome-user nav"></span></a></li>
-	  <li class = "nav"><a href="https://github.com/2016rshah"><span class="fontawesome-github nav"></span></a></li>
-	  <li class = "nav"><a href="/references" class = "nav"><span class="fontawesome-bullhorn nav"></span></a></li>
+	  <li class = "nav"><a href="/hackathons"><span class="fontawesome-folder-open nav"></span></a></li>
+	  <li class = "nav"><a href="/classes" class = "nav"><span class="fontawesome-pencil nav"></span></a></li>
 	</ul>
 </template>
 <template name = "hackathons">
@@ -197,17 +200,34 @@ reasoning, predicate calculus, and genetic algorithms.</p>
 	</div>
 </template>
 <template name = "me">
-	<div class = "row">
-			<div class = "columns medium-6 show-for-medium-up">
-				<!-- <div class = "panel" style = "width:637px; height:637px"> -->
-					<img src="prof.jpg" alt="profile-picture" height = "300" width = "300" class = "right">
-				<!-- </div> -->
+	<div id = "me">
+		<div class = "row">
+			<div class = "columns medium-12 medium-centered show-for-medium-up" style = "text-align:center">
+					<img src="prof.jpg" alt="profile-picture" height = "300" width = "300">
 			</div>
-			<div class = "columns medium-4 small-12 end">
+		</div>
+		<div class = "row">
+			<div class = "columns medium-6 small-12 ">
 				<div id = "about" class = "panel">
-					<h5>About me</h5>
-					<p>I am groot.</p>
+					<h5>General</h5>
+					<p>I am a junior at Thomas Jefferson High School for Science and Technology (<a href = "http://www.tjhsst.edu/">TJHSST</a>). It is the <a href = "http://www.newsweek.com/2014/09/19/number-1-high-school-america-offers-real-head-start-268693.html">best</a> public high school in the nation.</p>
+
+					<p>I am the outreach coordinator and treasurer for my school's <a href = "https://github.com/TJDevClub">Dev(elopment) Club</a>, council member for my school's Mock Trial Club, co-president for my school's Science and Law Club, and the treasurer for my school's Paleontology Society.</p>
+
+					<p>I've done Model United Nations and Public Forum Debate for about two years each. For Public Forum I was a quarter-finalist at the Metropolitan Region Invitational and I've been to <a href = "http://columbiadebate.org/invitational/invitation">Columbia's</a> Annual Competition. For MUN I have attended numerous local competitions and the Ivy League (<a href = "http://www.ilmunc.com/">ILMUNC</a>), William and Mary (<a href = "https://twitter.com/wmhsmun">WMHSMUN</a>), and Washington Area (<a href = "http://www.wamunc.com/">WAMUNC</a>) Model United Nations Conferences. In MUN and PF I have won a variety of local and national awards.</p>
 				</div>
 			</div>
+			<div class = "columns medium-6 small-12 ">
+				<div id = "about" class = "panel">
+					<h5>CS Specific</h5>
+					<p>I have taken <a href = "/classes">3 years</a> of computer science courses ranging from Data Structures to Artificial Intelligence. I know Java, Python, and Javascript.</p>
+					
+					<p>I love <a href = "/hackathons">hackathons</a>.</p>
+
+					<p>I interned at the <a href = "http://www.mitre.org/">MITRE Corporation</a> this summer and used Python to create a natural language processing system for parsing data sets from over 12,000 air traffic controller transmissions. I created four call-sign identification algorithms and developed metrics/statistics for use by subject matter experts to report progress to the FAA clients. We also won the <a href = "http://instagram.com/p/rCOaKjIZ-q/">Intern Paper Airplane Competition</a></p>
+					<p>I work on side projects in my free time. For example I have been developing with the drone we won at Hack the North <a href = "https://github.com/2016rshah/drone">here</a>, I made a site for THREEjs animations <a href = "http://threejs.meteor.com/">here</a>, and (like most programmers under the age of 20) I had a <a href = "https://github.com/2016rshah/phaser">video-game</a> development phase. For more side projects just check my <a href = "https://github.com/2016rshah">github</a>.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
