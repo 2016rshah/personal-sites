@@ -7,7 +7,6 @@ if (Meteor.isClient) {
                 "What I mean is that if you really want to understand something, the best way is to try and explain it to someone else. That forces you to sort it out in your own mind. And the more slow and dim-witted your pupil, the more you have to break things down into more and more simple ideas. And that’s really <a href = '#'>the essence of programming</a>. By the time you’ve sorted out a complicated idea into little steps that even a stupid machine can deal with, you’ve certainly learned something about it yourself. The teacher usually learns more than the pupil. Isn’t that true?"
             ]
             return quotes[Math.floor(Math.random()*quotes.length)];
-            //return quotes[2]
         }
     });
     Template.hackathons.rendered = function () {
@@ -19,27 +18,16 @@ if (Meteor.isClient) {
         //animate("#classes", "flipInX")
     };
     Template.me.rendered = function () {
-        
         animate("#me", "fadeInUp")
     };
-    Template.intro.events({
-        'click .button': function () {
-            $('#myModal').foundation('reveal', 'open');
-        }
-    });
-    // Template.projects.events({
-    //     'click #hacks': function () {
-    //         animate("#hacks", "flipInX")
-    //     }, 
-    //     'click #classes':function(){
-    //         animate("#classes", "flipInX")
-    //     }
-    // });
+    Template.home.rendered = function () {
+        animate("blockquote", "fadeIn")
+        animate("#buttons", "flipInX")
+    };
     Template.navigation.rendered = function () {
-        $('#myModal').foundation('reveal', 'open');
         $(function(){
             $(".element").typed({
-                strings: ["System.out.print('Hello World!');", "print('Hello World!')", "console.log('Hello World!')", "Hello World!"],
+                strings: ["System.out.print('Hello World! My name is Rushi Shah.');", "print('Hello World! My name is Rushi Shah.')", "console.log('Hello World! My name is Rushi Shah.')", "Hello World! My name is Rushi Shah."],
                 typeSpeed: .25
             });
         });
